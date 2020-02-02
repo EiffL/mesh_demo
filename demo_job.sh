@@ -6,4 +6,4 @@
 #SBATCH --gres=gpu:8
 #SBATCH --exclusive -A m1759
 module purge && module load  tensorflow/gpu-2.0.0-py37 esslurm gcc/7.3.0
-srun python demo.py --nc=128 > log
+srun python mnist.py > log
